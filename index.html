@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard de Sensores</title>
+  <script src="https://cdnjs.com/libraries/Chart.js "></script>
+  <script src="script.js"></script>
+  
+</head>
+<body>
+    <h1 class=" font-sans">Dashboard de Sensores</h1>
+
+  <div id="dashboard">
+    <div class="widget">
+      <h2>Promedio de pH en Sensor 5</h2>
+      <p id="promedioPh">Cargando...</p>
+    </div>
+    <div class="widget">
+      <canvas id="graficoAcidez"></canvas>
+    </div>
+    <div class="widget">
+      <canvas id="graficoPromedioAcidez"></canvas>
+    </div>
+  </div>
+
+  <style>
+    /* Estilos básicos para el dashboard */
+    #dashboard {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .widget {
+      width: 300px;
+      height: 300px;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  </style>
+</body>
+</html>
